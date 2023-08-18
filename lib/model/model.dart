@@ -65,7 +65,7 @@ class MyModelList extends StatelessWidget {
                         Align(
                           alignment: Alignment.centerRight,
                           child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {print('object');},
                               child: const Text('Add to Cart')),
                         ),
                       ],
