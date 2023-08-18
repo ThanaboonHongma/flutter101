@@ -4,7 +4,11 @@ class MyModelList extends StatelessWidget {
   final String title;
   final String description;
   final String img;
-  const MyModelList({super.key, required this.title, required this.description, required this.img});
+  const MyModelList(
+      {super.key,
+      required this.title,
+      required this.description,
+      required this.img});
 
   @override
   Widget build(BuildContext context) {
@@ -47,13 +51,16 @@ class MyModelList extends StatelessWidget {
                         Text(
                           title,
                           style: const TextStyle(
-                              fontSize: 24,
-                              color: Color.fromARGB(255, 45, 241, 133)),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 28,
+                              color: Color.fromARGB(255, 253, 0, 0)),
                         ),
                         Text(
                           description,
-                          style:
-                              const TextStyle(fontSize: 14, color: Colors.black),
+                          style: const TextStyle(
+                            fontStyle: FontStyle.italic,
+                              fontSize: 18,
+                              color: Color.fromARGB(255, 0, 0, 0)),
                         ),
                       ],
                     ),
