@@ -58,15 +58,16 @@ class MyModelList extends StatelessWidget {
                         Text(
                           description,
                           style: const TextStyle(
-                            fontStyle: FontStyle.italic,
+                              fontStyle: FontStyle.italic,
                               fontSize: 18,
                               color: Color.fromARGB(255, 0, 0, 0)),
                         ),
                         Align(
                           alignment: Alignment.centerRight,
                           child: ElevatedButton(
-                      
-                              onPressed: () {print('Hello i name');},
+                              onPressed: () {
+                                print('Hello i name');
+                              },
                               child: const Text('Add to Cart')),
                         ),
                       ],
